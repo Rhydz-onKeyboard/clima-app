@@ -7,7 +7,7 @@ class Buscar {
     }
     get parametrosMapbox(){
         return {
-            'access_token': 'pk.eyJ1Ijoicmh5ZHoiLCJhIjoiY2wzc3ozZzlzMDQ3cjNjcXBrMWN0bDl5dyJ9.vlRxfuLZmRzu9406R44yBA',
+            'access_token': process.env.KEY_MAPBOX,
             'limit': 5,
             'language': 'es'
         }
@@ -15,7 +15,7 @@ class Buscar {
 
     get parametrosOpentWeather(){
         return {
-            'appid': '60d03c95d51d41c95a59a0931e6056a0',
+            'appid': process.env.KEY_OPENWEATHER,
             'units': 'metric',
             'lang': 'es'
         }
